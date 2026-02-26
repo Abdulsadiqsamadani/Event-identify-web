@@ -39,11 +39,60 @@ body {
 
 .hero h1 {
   color: #ec5242;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
+.date {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.main-program {
+  background-image: url(Asset/rm373batch2-02.jpg);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.program-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: :left;
+}
+
+.program-card img {
+  width: 40px;
+}
+
+.program-card h3{
+  color: #ec5242;
+  min-width: 100px;
+}
 .featured {
   padding: 2rem 1rem;
+}
+
+.speaker-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.speaker-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
 }
 
 footer {
