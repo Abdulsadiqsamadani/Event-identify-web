@@ -1,0 +1,142 @@
+ @media  (min-width: 1024px) {
+ body {
+  display: flex;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: anchor-center;
+  margin-left: -146px;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+  gap: 2rem;
+}
+
+.desktop-nav button {
+  background-color: #ec5242;
+  color: white;
+  border-radius: 5px;
+}
+.menu-btn {
+  display: none;
+}
+
+.nav {
+  display: none;
+} 
+
+.desktop-nav ul {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  gap:  70px;
+  margin: -20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  color: #ec5242;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ec5242;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.desktop-main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("Asset/rm373batch2-02.jpg");
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-main-program p {
+  color: white;
+  font-family: lato, sans-serif;
+  font-size: 1rem;
+}
+
+.card-btn-desktop {
+  color: white;
+  background-color: #ec5242;
+}
+.main-program {
+display: none;
+}
+
+@media (min-width: 768px){.program-container {
+  display: flex;
+  flex-direction: row;
+}
+}
+
+.program-card img {
+  width: 110px;;
+  background-color: white;
+}
+
+/*.program-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+*/
+.speakers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.speaker-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 20px;           
+  margin-bottom: 20px; 
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.speaker-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;      
+}
+
+.speaker-card h3{
+  text-align: left;    
+}
+
+@media (min-width: 768px)
+{#toggle-btn {
+  display: none;
+}
+}
+ }

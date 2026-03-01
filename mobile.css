@@ -1,10 +1,36 @@
-@media (min-width: 768px)
+p {
+  font-family: lato, sans-serif;
+  font-size: 1rem;
+}
 
 body {
-  font-family: 'lato', sans-serif;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ec5242;
+  }
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+}
+.menu-btn img {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
 
 .header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +52,14 @@ body {
   padding: 2rem;
 }
 
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav ul {
+  display: none;
+}
+
 .nav a {
   color: white;
   text-decoration: none;
@@ -37,24 +71,60 @@ body {
   right: 0;
 }
 
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .hero h1 {
+  font-size: 2rem;
   color: #ec5242;
   font-weight: bolder;
 }
 
+h2 {
+  color: #ec5242;
+}
+
+p {
+  font-family: lato, sans-serif;
+  font-size: 1rem;
+}
+
+.bordered-text {
+  border-radius: 20px;
+  border: 2px solid #E1D9D1;
+}
+
 .date {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 
+
 .main-program {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(Asset/rm373batch2-02.jpg);
   color: white;
   padding: 2rem 1rem;
+  margin: 20px;
   text-align: center;
 }
 
+.main-program img {
+  background-color: white;
+}
+
+.desktop-main-program {
+  display: none;
+}
+
 .program-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -76,8 +146,14 @@ body {
   color: #ec5242;
   min-width: 100px;
 }
+
+.program-card p {
+  color: white;
+}
+
 .featured {
-  padding: 2rem 1rem;
+  width: 100%;
+  padding: 40px;
 }
 
 .speaker-card {
@@ -95,9 +171,29 @@ body {
   object-fit: cover;
 }
 
+#toggle-btn {
+  width: 441px;
+  height: 70px;
+  border-radius: 10px;;
+  color: #ec5242;
+  margin: 20px;
+}
+
+.card-btn-mobile {
+  background-color: #ec5242;
+  color: white;
+  width: 370px;
+  height: 50px;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
   background: #272a31;
   color: white;
+}
+
+.footer {
+  width: 345px;
+}
 }

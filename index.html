@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="html" href="About.html">
 </head>
 <body>
   <header class="header">
@@ -16,51 +18,88 @@
     <nav class="nav">
       <button class="close-btn">&times;</button>
       <ul>
-        <li><a href="about.html">About</a></li>
+        <li><a href="About">About</a></li>
         <li><a href="#">Program</a></li>
         <li><a href="#">Join</a></li>
       </ul>
     </nav>
+     <nav class="desktop-nav">
+      <ul>
+        <li><a href="About">About</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#speakers">Sponsor</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#"><button>C C campain</button></a></li>
+      </ul>
+    </nav>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="About">
       <h2>"Innovate. Build. Impact."</h2>
       <h1>UDUS TECH SUMMIT 2026</h1>
-      <p>The UDUS Tech & knowledhge Summit 2026 btings together innovators, scholars, and tech enthusiasts to empower the ummmah through technology, learning and collaboration</p>
+       <p class="bordered-text">The UDUS Tech & knowledhge Summit 2026 btings together innovators, scholars, and tech enthusiasts to empower the ummmah through technology, learning and collaboration</p>
       <p class="date">2026.08.12(WED) ~ 14(FRI)</p>
       <p class="location"> @virtual & UDUS Innovation Hub</p>
     </section>
-    <section class="main-program">
+    <section class="main-program" id="program">
       <h2>Main program</h2>
       <div class="program-container">
         <div class="program-card">
-          <img src="image" alt="lecture icon">
+          <img src="Asset/lecture-2.svg" alt="lecture icon">
           <h3>Lectures</h3>
           <p>Insightful talks from experience spftware engineers sharing real-world development strategies.</p>
         </div>
         <div class="program-card">
-          <img src="image" alt="workshop icon">
+          <img src="Asset/technology-7.svg" alt="workshop icon">
           <h3>Workshops</h3>
           <p>Hands-on coding sessions focused on frontend and backende technologies.</p>
         </div>
         <div class="program-card">
-          <img src="image" alt="forum-icon">
+          <img src="Asset/forum-5.svg" alt="forum-icon">
           <h3>Tech Forum</h3>
           <p>Interactive discussion on innovation,startup,and future tech trends.</p>
       </div>
       <div class="program-card">
-        <img src="image" alt="ignite icon">
+        <img src="Asset/flame-7.svg" alt="ignite icon">
         <h3>Ignite</h3>
         <p>Short inspiring talks from developers sharing breakthrough ideas.</p>
       </div>
+      <button class="card-btn-mobile" id="#">JOIN</button>
     </section>
-    <section class="featured">
+    <section class="desktop-main-program" id="program">
+      <h2>Main program</h2>
+      <div class="program-container">
+        <div class="program-card">
+          <img src="Asset/lecture-2.svg" alt="lecture icon">
+          <h3>Lectures</h3>
+          <p>Insightful talks from experience spftware engineers sharing real-world development strategies.</p>
+        </div>
+        <div class="program-card">
+          <img src="Asset/technology-7.svg" alt="workshop icon">
+          <h3>Workshops</h3>
+          <p>Hands-on coding sessions focused on frontend and backende technologies.</p>
+        </div>
+        <div class="program-card">
+          <img src="Asset/forum-5.svg" alt="forum-icon">
+          <h3>Tech Forum</h3>
+          <p>Interactive discussion on innovation,startup,and future tech trends.</p>
+      </div>
+      <div class="program-card">
+        <img src="Asset/flame-7.svg" alt="ignite icon">
+        <h3>Ignite</h3>
+        <p>Short inspiring talks from developers sharing breakthrough ideas.</p>
+       </div>
+      <h3>See The Whole Program</h3>
+    </section>
+    <section class="featured" id="speakers">
       <h2>Featured Speakers</h2>
-      <div id="speakers-container"></div>
+      <div id="speakers-container">
       <button id="toggle-btn">More</button>
+      </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <p>© 2026 Tech Summit. All Rights Reserved.</p>
   </footer>
   <script src="js/main.js"></script>

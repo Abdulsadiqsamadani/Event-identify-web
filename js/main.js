@@ -1,16 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuBtn = document.querySelector('.menu-btn');
-  const closeBtn = document.querySelector('.close-btn');
-  const nav = document.querySelector('.nav');
+  console.log("JS connected");
 
-  menuBtn.addEventListener('click', () => {
-    nav.classList.add('active');
-  });
+  const menuBtn = document.querySelector(".menu-btn");
+  const closeBtn = document.querySelector(".close-btn")
+  const nav = document.querySelector(".nav")
 
-  closeBtn.addEventListener('click', () => {
-    nav.classList.remove('active');
-  });
+  closeBtn.addEventlistener("click", () =>{nav.style.display = "none";});
+  closeBtn.addEventlistener("click", () =>{nav.style.display = "none";});
 
+  const container = document.getElementById('speakers-container');
+  const toggleBtn = document.getElementById('toggle-btn');
+
+  if (!container || !toggleBtn) {
+    console.error("container or toggleBtn button missing");
+    return;
+  }
+ 
   const speakers = [
     {
       name: "Dr shehu S-Tudu",
@@ -23,48 +28,51 @@ document.addEventListener('DOMContentLoaded', () => {
       role: "Software Developer",
       description: "Sahalu is a fullstack developer experienced in building scalable web applications. He is skilled in both frontend and backend technologoes and enjoys mentoring emerging developers in practical coding solution.",
       image: "Asset/sahalu.JPG",
-    },
+       },
     {
       name: "Aliyu Dahiru",
-      role: "Cyber secuirity Expert",
-      description: "Mal Aliyu is a cybersecurity expert with over 10 years of experience in securing digital infrastructures across Africa, mal ALiyu dahiru specialize in securing infratructure and protecting orgniazation against cyber threats. He trains young developers on best secuirity practices and ethical hacking to build a safer online ecosystem",
-      image: "Asset/aliyu.jpg",
+      role: "Cybersecurity Expert",
+      description: "Secuirity expert specializing in digital infrastrucutre protection and ethical hacking education across Nigeria.",
+      image: "asset/aliyu.jpg",
     },
     {
       name: "Sadiq Abdulbasid Abdussamad",
-      role: "software developer",
-      description: "host",
-      image: "Asset/sadiq.jpg",
+      role: "Software Developer",
+      description: "Host",
+      image: "asset/sadiq.jpg",
     },
   ];
-  
-
-  const container = document.getElementById('speakers-container');
-  const toggleBtn = document.getElementById("toggle-btn")
 
   let showAll = false;
 
   function displaySpeakers() {
     container.innerHTML = "";
-    const speakersToshow = showAll ? speakers : speakers.slice(0, 2);
-    speakersToshow.forEach((speaker) => {
+
+    const speakersToShow = showAll ? speakers : speakers.slice(0, 2);
+
+    speakersToShow.forEach((speaker) => {
       const card = document.createElement("div");
       card.classList.add("speaker-card");
-     
-    card.innerHTML = `
-     ${speaker.image ? `<img src="${speaker.image}" alt ="${speaker.name}">` :""}
-      <h2>${speaker.name}</h2>
-      <p><strong>${speaker.role}</strong></p>
-      <p>${speaker.description}</p>
-      </div>
-    `;
-    container.appendChild(card);
-   });
-  toggleBtn.textContent = showAll ? "Less" : "More";
-}
-toggleBtn.addEventListener("click",() => {
-  showAll = !showAll;
+
+      card.innerHTML = `
+        <img src="${speaker.image}" alt="${speaker.name}">
+        <div>
+          <h3>${speaker.name}</h3>
+          <p><strong>${speaker.role}</strong></p>
+          <p>${speaker.description}</p>
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+
+    toggleBtn.textContent = showAll ? "Less" : "More";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    showAll = !showAll;
+    displaySpeakers();
+  });
+
   displaySpeakers();
-});
-displaySpeakers();
 });
