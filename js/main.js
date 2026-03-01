@@ -3,10 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const menuBtn = document.querySelector(".menu-btn");
   const closeBtn = document.querySelector(".close-btn")
-  const nav = document.querySelector(".nav")
+  const nav = document.querySelector(".nav");
 
-  closeBtn.addEventlistener("click", () =>{nav.style.display = "none";});
-  closeBtn.addEventlistener("click", () =>{nav.style.display = "none";});
+
+
+  menuBtn.addEventListener("click", () => { nav.style.display = "block"; });
+  closeBtn.addEventListener("click", () => { nav.style.display = "none"; });
+
+
+//  closeBtn.addEventListener("click", () =>{nav.style.display = "block";
+//  closeBtn.addEventListener("click", () =>{nav.style.display = "none";});
 
   const container = document.getElementById('speakers-container');
   const toggleBtn = document.getElementById('toggle-btn');
