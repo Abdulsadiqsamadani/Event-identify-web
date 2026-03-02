@@ -38,6 +38,13 @@
   position: fixed;
   gap:  70px;
   margin: -20px;
+  list-style: none;
+}
+
+a {
+  margin: ;
+  color: black;
+  text-decoration: none;
 }
 
 .hero {
@@ -59,6 +66,21 @@
   z-index: 2;
 }
 
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+  background: linear-gradient(90deg, #ff3c3c, #ff7a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #ff3c3c;
+}
+
 .desktop-main-program {
   display: flex;
   flex-direction: column;
@@ -67,6 +89,7 @@
   color: white;
   text-align: center;
   padding: 80px 20px;
+  align-items: anchor-center;
 }
 
 .main-program {
@@ -74,7 +97,6 @@
 }
 
 .desktop-main-program h2 {
-  color: #ff3c3c;
   margin-bottom: 40px;
 }
 
@@ -158,8 +180,12 @@
   flex-shrink: 0;      
 }
 
-.speaker-card h3{
+.speaker-card h2 {
   text-align: left;    
+}
+
+.speaker-card h2 {
+  color: #ff3c3c;
 }
  }
 

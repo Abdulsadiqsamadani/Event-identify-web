@@ -4,9 +4,17 @@ p {
 }
 
 body {
-  width: fit-content;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  width: 90px;
+  padding: 0 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -135,6 +143,9 @@ p {
 }
 
 .main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #111;
   color: white;
   text-align: center;
@@ -157,7 +168,6 @@ p {
   background: rgba(255, 255, 255,0.05);
   border: 1px solid rgba(255, 255, 255, 0.02);
   padding: 30px;
-  width: 220px;
   transform: 0.3 ease;
 }
 

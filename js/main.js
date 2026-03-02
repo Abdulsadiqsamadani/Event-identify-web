@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <img src="${speaker.image}" alt="${speaker.name}">
         <div>
-          <h3>${speaker.name}</h3>
-          <p><strong>${speaker.role}</strong></p>
+          <h1>${speaker.name}</h1>
+          <h2><strong>${speaker.role}</strong></h2>
           <p>${speaker.description}</p>
         </div>
       `;
