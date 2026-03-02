@@ -41,70 +41,98 @@
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
+  background-image: (Asset/bfjpg);
+  padding: 120px 20px;
   text-align: center;
+  position: relative;
 }
 
-h2 {
-  color: #ec5242;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
-.hero h1 {
-  color: #ec5242;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.hero * {
+  position: relative;
+  z-index: 2;
 }
 
 .desktop-main-program {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.main-program {
+  display: none;
+}
+
+.desktop-main-program h2 {
+  color: #ff3c3c;
+  margin-bottom: 40px;
+}
+
+.speaker {
+  display: flex;
+  gap: 15px;
+}
+
+#speakers-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.program-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  background-image: url("Asset/rm373batch2-02.jpg");
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .program-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.desktop-main-program p {
-  color: white;
-  font-family: lato, sans-serif;
-  font-size: 1rem;
-}
-
-.card-btn-desktop {
-  color: white;
-  background-color: #ec5242;
-}
-.main-program {
-display: none;
-}
-
-@media (min-width: 768px){.program-container {
-  display: flex;
-  flex-direction: row;
-}
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  padding: 30px;
+  width: 220px;
+  transition: 0.3s ease;
 }
 
 .program-card img {
-  width: 110px;;
-  background-color: white;
+  width: 60px;
+  margin-bottom: 10px;
 }
 
-/*.program-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+.program-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-8px);
 }
-*/
+#toggle-btn{
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 30px;
+  border: 2px solid #ff3c3c;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#toggle-btn:hover {
+  background: #ff3c3c;
+}
+
 .speakers-container {
   display: flex;
   justify-content: space-between;
@@ -133,10 +161,5 @@ display: none;
 .speaker-card h3{
   text-align: left;    
 }
-
-@media (min-width: 768px)
-{#toggle-btn {
-  display: none;
-}
-}
  }
+

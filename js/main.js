@@ -7,8 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  menuBtn.addEventListener("click", () => { nav.style.display = "block"; });
-  closeBtn.addEventListener("click", () => { nav.style.display = "none"; });
+  menuBtn.addEventListener("click", () => { nav.classList.add("active"); 
+    
+  });
+  closeBtn.addEventListener("click", () => { nav.classList.remove("active");
+    
+   });
 
 
 //  closeBtn.addEventListener("click", () =>{nav.style.display = "block";
@@ -27,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Dr shehu S-Tudu",
       role: "AI Engineer",
       description: "Dr shehu S Tudu is a senior lecturer in sokoto state university and software development expert building innovative and ethical solutions for Africa. He focus in creating scalable applications that solve real world problems while empowering local tech commuinities.",
-      image: "Asset/sheu.jpg",
+      image: "Asset/shehu.jpg",
     },
     {
       name: "Sahalu Aminu KOKO",
@@ -39,14 +43,26 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Aliyu Dahiru",
       role: "Cybersecurity Expert",
       description: "Secuirity expert specializing in digital infrastrucutre protection and ethical hacking education across Nigeria.",
-      image: "asset/aliyu.jpg",
+      image: "Asset/aliyu.jpg",
     },
     {
       name: "Sadiq Abdulbasid Abdussamad",
       role: "Software Developer",
       description: "Host",
-      image: "asset/sadiq.jpg",
+      image: "Asset/sadiq.jpg",
     },
+    {
+      name: "Abdulaziz Sadiq",
+      role: "Data Scientist",
+      description: "Data scientist with a passion for leveraging data to drive inisight and informed decision makinng in the tech industry ",
+      image: "Asset/abdulaziz.jpg",
+    },
+    {
+      name: "Abdurrahman muhammad bashir",
+      role: "Ai Researcher",
+      description: "AI researcher focused on dev",
+      image: "Asset/abdurrahman.jpg",
+    }
   ];
 
   let showAll = false;
