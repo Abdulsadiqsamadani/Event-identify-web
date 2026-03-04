@@ -1,22 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("JS connected");
-
   const menuBtn = document.querySelector(".menu-btn");
-  const closeBtn = document.querySelector(".close-btn")
-  const nav = document.querySelector(".nav");
+  const closeBtn = document.querySelector(".close-btn");
+  const nav = document.querySelector(".mobile");
 
-
-
-  menuBtn.addEventListener("click", () => { nav.classList.add("active"); 
-    
-  });
-  closeBtn.addEventListener("click", () => { nav.classList.remove("active");
-    
-   });
-
-
-//  closeBtn.addEventListener("click", () =>{nav.style.display = "block";
-//  closeBtn.addEventListener("click", () =>{nav.style.display = "none";});
+  menuBtn.addEventListener("click", () => { nav.classList.add("active"); });
+  closeBtn.addEventListener("click", () => { nav.classList.remove("active"); });
 
   const container = document.getElementById('speakers-container');
   const toggleBtn = document.getElementById('toggle-btn');
@@ -28,16 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
  
   const speakers = [
     {
-      name: "Dr shehu S-Tudu",
+      name: "Dr shehu S-Tudu",            
       role: "AI Engineer",
       description: "Dr shehu S Tudu is a senior lecturer in sokoto state university and software development expert building innovative and ethical solutions for Africa. He focus in creating scalable applications that solve real world problems while empowering local tech commuinities.",
       image: "Asset/shehu.jpg",
     },
     {
-      name: "Sahalu Aminu KOKO",
+      name: "Sahalu Aminu Koko",
       role: "Software Developer",
       description: "Sahalu is a fullstack developer experienced in building scalable web applications. He is skilled in both frontend and backend technologoes and enjoys mentoring emerging developers in practical coding solution.",
-      image: "Asset/sahalu.JPG",
+      image: "Asset/sahalu.png",
        },
     {
       name: "Aliyu Dahiru",
@@ -80,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <img src="${speaker.image}" alt="${speaker.name}">
         <div>
           <h1>${speaker.name}</h1>
-          <h2><strong>${speaker.role}</strong></h2>
+          <h2>${speaker.role}</h2>
           <p>${speaker.description}</p>
         </div>
       `;
@@ -98,3 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   displaySpeakers();
 });
+
+  const joinBtn = document.querySelector(".join-btn");
+  const joinSection = document.querySelector(".join-section");
+
+  if (joinBtn && joinSection) {
+    joinBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      joinSection.classList.toggle("active");
+    });
+  }
