@@ -20,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  width: 100%;
 }
 
 .mobile-nav {
@@ -58,8 +57,11 @@ a {
   height: 45px;
 }
 
+.desktop-header {
+  width: 100%;
+}
+
 .hero {
-  background-image: (Asset/bfjpg);
   padding: 120px 20px;
   text-align: center;
   position: relative;
@@ -92,6 +94,7 @@ a {
 }
 
 .desktop-main-program {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -103,9 +106,8 @@ a {
 }
 
 .desktop-nav-ul {
-  padding-left: 515px;
+  padding-left: 65%;
   background-color: #454347ca;
-  width: 64rem;
   height: 30px;
 }
 
@@ -119,16 +121,16 @@ a {
 }*/
 
 .desktop-about-ul {
+  display: flex;
+  flex-direction: row;
   height: 70px;
   align-items: anchor-center;
   border: 3px solid white;
-  display: flex;
-  flex-direction: row;
-  padding-right: 100px;
+  padding-right: 5%;
 }
 
 .desktop-about-ul img {
-  padding-right: 165px;
+  padding-right: 515px;
 }
 
 .main-program {
@@ -140,6 +142,10 @@ a {
   margin-bottom: 40px;
 }
 
+.desktop-main-program h3 {
+  margin-top: 40px;
+}
+
 .speaker {
   display: flex;
   gap: 15px;
@@ -149,12 +155,15 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  gap: 30px;
+  gap: 12px;
+  gap: 0 180px;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .program-container {
+  align-items: center;
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -164,7 +173,7 @@ a {
   flex-direction: column;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.02);
-  padding: 30px;
+  padding: -10px;
   width: 20%;
   transition: 0.3s ease;
   height: 230px;
@@ -213,8 +222,8 @@ a {
 }
 
 .speaker-card img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 10%;
   object-fit: cover;
   flex-shrink: 0;      
@@ -226,6 +235,11 @@ a {
 
 .speaker-card h2 {
   color: #ff3c3c;
+}
+
+.speaker-card p {
+  font-size: 15px;
+  width: 310px;
 }
 
 .news-page {

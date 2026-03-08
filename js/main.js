@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Dr shehu S-Tudu",            
       role: "AI Engineer",
       description: "Dr shehu S Tudu is a senior lecturer in sokoto state university and software development expert building innovative and ethical solutions for Africa. He focus in creating scalable applications that solve real world problems while empowering local tech commuinities.",
-      image: "Asset/shehu.jpg",
+      image: "Asset/shehu.jpeg",
     },
     {
       name: "Sahalu Aminu Koko",
@@ -31,25 +31,25 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Aliyu Dahiru",
       role: "Cybersecurity Expert",
       description: "Secuirity expert specializing in digital infrastrucutre protection and ethical hacking education across Nigeria.",
-      image: "Asset/aliyu.jpg",
+      image: "Asset/courseey.png",
     },
     {
       name: "Sadiq Abdulbasid Abdussamad",
       role: "Software Developer",
       description: "Host",
-      image: "Asset/sadiq.jpg",
+      image: "Asset/Abdul.jpg",
     },
     {
-      name: "Abdulaziz Sadiq",
-      role: "Data Scientist",
-      description: "Data scientist with a passion for leveraging data to drive inisight and informed decision makinng in the tech industry ",
-      image: "Asset/abdulaziz.jpg",
+      name: "Abdussamad Sadiq",
+      role: "Computer Scientist",
+      description: "Computer scientist with a passion for leveraging Computer field to drive inisight and informed decision makinng in the tech industry ",
+      image: "Asset/Abdussamad.png",
     },
     {
-      name: "Abdurrahman muhammad bashir",
+      name: "Abdurrahman muhammad Bashir",
       role: "Ai Researcher",
       description: "AI researcher focused on dev",
-      image: "Asset/abdurrahman.jpg",
+      image: "Asset/abdul.jpeg",
     }
   ];
 

@@ -229,7 +229,6 @@ p {
   display: none;
 }
 
-
 .featured {
   align-items: anchor-center;
   display: flex;
@@ -251,10 +250,15 @@ hr {
   margin-top: -25px;
 }
 
+#speakers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .speaker-card {
   display: flex;
   gap: 1.5rem;
-  width: 300px;
 }
 
 .speaker-card h1 {
@@ -268,11 +272,11 @@ hr {
 }
 
 .speaker-card p {
-  font-size: 10px;
+  font-size: 10px
 }
 .speaker-card img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 10%;
   object-fit: cover;
 }
@@ -430,11 +434,11 @@ footer {
 }
 
 .partner {
+  width: 100%;
   margin-top: 40px;
   background: #272a31;
   color: white;
   text-align: center;
-  background-position: 50% 97%, 98% 96%, 0% 100%, 0% 60%, 93% 61%;
 }
 
 .partner h2 {
@@ -456,26 +460,30 @@ footer {
 }
 
 .mozilla {
-  position: fixed;
-  left: 5%; top: 9%;
+  display: flex;
+  flex-direction: column;
+  left: 90%; top: 9%;
 }
 
-.google {
-  position: fixed;
+.google {display: flex;
+  flex-direction: column;
   left: -5%; right: -5%;
 }
 
 .naver {
-  position: fixed;
-  right: 9%; top: 9%;
+  display: flex;
+  flex-direction: column;
+  right: 0%; top: 0%;
 }
 
 .dam {
-  position: fixed;
-  left: 5%; bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  left: 0%; bottom: 0%;
 }
 
 .airbnb {
-  position: fixed;
-  right: 5%; bottom: 8%;
+  display: flex;
+  flex-direction: column;
+  right: 0%; bottom: 0%;
 }
