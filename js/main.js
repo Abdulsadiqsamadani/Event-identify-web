@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Abdurrahman muhammad Bashir",
-      role: "Ai Researcher",
+      role: "AI Researcher",
       description: "AI researcher focused on dev",
       image: "Asset/abdul.jpeg",
     }
@@ -57,8 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function displaySpeakers() {
     container.innerHTML = "";
+    let speakersToShow;
 
-    const speakersToShow = showAll ? speakers : speakers.slice(0, 2);
+    if (window.innerWidth <= 768) {
+      speakersToShow = showAll ? speakers : speakers.slice(0, 2);
+      toggleBtn.style.display = "block";
+    } else {
+      speakersToShow  = speakers;
+      toggleBtn.style.display = "none";
+    }
 
     speakersToShow.forEach((speaker) => {
       const card = document.createElement("div");
@@ -67,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
       card.innerHTML = `
         <img src="${speaker.image}" alt="${speaker.name}">
         <div>
-          <h1>${speaker.name}</h1>
-          <h2>${speaker.role}</h2>
+          <h4>${speaker.name}</h4>
+          <h5>${speaker.role}</h5>
           <p>${speaker.description}</p>
         </div>
       `;
@@ -83,6 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
     showAll = !showAll;
     displaySpeakers();
   });
+
+  window.addEventListener('resize', displaySpeakers);
 
   displaySpeakers();
 });

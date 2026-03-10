@@ -36,14 +36,6 @@ body {
   align-self: flex-start;
 }*/
 
-.header {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-}
-
 .mobile.active {
   display: block;
   background-image: url("Asset/mainbackground.png");
@@ -84,11 +76,7 @@ body {
   border: none;
 }
 
-.desktop-nav {
-  display: none;
-}
-
-.desktop-nav ul {
+.desktop_nav {
   display: none;
 }
 
@@ -261,11 +249,11 @@ hr {
   gap: 1.5rem;
 }
 
-.speaker-card h1 {
-  font-size: 15px;
+.speaker-card h4 {
+  font-size: 16px;
 }
 
-.speaker-card h2 {
+.speaker-card h5 {
   color: #ff3c3c;
   font-size: 14px;
   text-align: justify;
@@ -295,14 +283,14 @@ hr {
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: #272a31;
-  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer {
-  width: 100%;
+.footer img{
+  width: 50%;
+  padding: 20px;
 }
 
 .news-page {
@@ -383,19 +371,17 @@ footer {
 }
 
 #main-about .hero-box {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   height: 140px;
   width: 100%;
 }
 
-#main-about .hero-box img {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  height: 40px;
-  border-radius: 10%;
-  object-fit: cover;
+#main-about .hero-box img { 
+  width: 108px;
+  height: 108px;
 }
 
 .past-about {
@@ -403,6 +389,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 35px;
+  border-top: 2px solid #eee;
 }
 
 .desktop-pasr-about {
@@ -435,16 +423,17 @@ footer {
 
 .partner {
   width: 100%;
-  margin-top: 40px;
   background: #272a31;
   color: white;
   text-align: center;
+  padding: 35px 0;
 }
 
 .partner h2 {
   margin-bottom: 10px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
+  color: white;
 }
 
 .line {
@@ -459,31 +448,13 @@ footer {
   background: white;
 }
 
-.mozilla {
+.partnerlogos {
   display: flex;
   flex-direction: column;
-  left: 90%; top: 9%;
+  list-style: none;
 }
 
-.google {display: flex;
-  flex-direction: column;
-  left: -5%; right: -5%;
-}
-
-.naver {
+.partnerlogos div {
   display: flex;
-  flex-direction: column;
-  right: 0%; top: 0%;
-}
-
-.dam {
-  display: flex;
-  flex-direction: column;
-  left: 0%; bottom: 0%;
-}
-
-.airbnb {
-  display: flex;
-  flex-direction: column;
-  right: 0%; bottom: 0%;
+  justify-content: space-around;
 }
