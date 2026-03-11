@@ -71,7 +71,7 @@ body {
   color: white;
   text-decoration: none;
   display: block;
-  margin: 1rem 0; 
+  margin: 1rem 0;
 }
 
 .nav.active {
@@ -161,9 +161,8 @@ p {
 }
 
 .program-card {
-  background: rgba(255, 255, 255,0.05);
+  background: rgba(255, 255, 255,0.05); 
   border: 1px solid rgba(255, 255, 255, 0.02);
-  padding: 30px;
   transform: 0.3 ease;
   display: flex;
   align-items: anchor-center;
@@ -221,7 +220,7 @@ p {
 hr {
   border: none;
   height: 3px;
-  background-color: #FF3c3c;
+  background-color: #ff3c3c;
   width: 55px;
   margin-top: -25px;
 }
@@ -248,8 +247,9 @@ hr {
 }
 
 .speaker-card p {
-  font-size: 10px
+  font-size: 10px;
 }
+
 .speaker-card img {
   width: 100px;
   height: 100px;
@@ -276,7 +276,7 @@ footer {
   gap: 10px;
 }
 
-.footer img{
+.footer img {
   width: 50%;
   padding: 20px;
 }
@@ -347,6 +347,7 @@ footer {
   color: black;
   font-weight: bold;
 }
+
 .past-about h2 {
   color: black;
   font-weight: normal;
@@ -360,7 +361,6 @@ footer {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  display: flex;
   height: 190px;
   width: 100%;
 }
@@ -368,6 +368,13 @@ footer {
 #main-about {
   color: black;
   background-color: white;
+}
+
+.partner h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
 }
 
 #main-about h2 {
@@ -402,7 +409,6 @@ footer {
   display: none;
 }
 
-
 .img-2 {
   height: 190px;
   width: 381px;
@@ -415,13 +421,6 @@ footer {
   color: white;
   text-align: center;
   padding: 35px 0;
-}
-
-.partner h2 {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
 }
 
 .line {
