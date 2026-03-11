@@ -168,7 +168,8 @@ a {
   border-color: white;
   transform: translateY(18px);
 }
-#toggle-btn{
+
+#toggle-btn {
   display: inline-block;
   margin-top: 40px;
   padding: 12px 30px;
@@ -301,5 +302,5 @@ a {
 }
 
 .footer p {
-  font-size: 30px
+  font-size: 30px;
 }
