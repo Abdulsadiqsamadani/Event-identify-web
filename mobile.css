@@ -39,7 +39,7 @@ body {
   right: 0;
 }
 
-.mobile-nav  ul {
+.mobile-nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ body {
   padding-left: 20px;
 }
 
-.mobile-nav  a {
+.mobile-nav a {
   text-decoration: none;
   color: #ff3c3c;
 }
@@ -161,7 +161,7 @@ p {
 }
 
 .program-card {
-  background: rgba(255, 255, 255,0.05); 
+  background: rgba(255, 255, 255, 0.05); 
   border: 1px solid rgba(255, 255, 255, 0.02);
   transform: 0.3 ease;
   display: flex;
@@ -391,7 +391,7 @@ footer {
   width: 100%;
 }
 
-#main-about .hero-box img { 
+#main-about .hero-box img {
   width: 108px;
   height: 108px;
 }
