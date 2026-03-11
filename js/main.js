@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Abdussamad Sadiq",
       role: "Computer Scientist",
       description: "Computer scientist with a passion for leveraging Computer field to drive inisight and informed decision makinng in the tech industry ",
-      image: "Asset/Abdussamad.png",
+      image: "Asset/Abdussamad.jpeg",
     },
     {
       name: "Abdurrahman muhammad Bashir",

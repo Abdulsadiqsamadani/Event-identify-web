@@ -123,6 +123,8 @@ Special thanks to **Sahl Aminu Koko**, my mentor, for his continuous support, en
 
 ---
 
-# 📝 License <a name="license"></a>
+## 📝 License <a name="license"></a>
 
-This project is licensed under the **MIT License**.
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
