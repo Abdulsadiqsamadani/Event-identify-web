@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Sadiq Abdulbasid Abdussamad",
       role: "Software Developer",
       description: "Host",
-      image: "Asset/Abdul.jpg",
+      image: "Asset/MY-PIC.png",
     },
     {
       name: "Abdussamad Sadiq",

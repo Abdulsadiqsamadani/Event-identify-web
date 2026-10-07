@@ -1,4 +1,4 @@
-<h3><b>UDUS Tech Summit Website</b></h3>
+<h3><b>UDUS TECH SUMMIT WEBSITE</b></h3>
 
 # 📗 Table of Contents
 
@@ -53,7 +53,7 @@ The website highlights the event details, program schedule, speakers, and partne
 
 # 🚀 Live Demo <a name="live-demo"></a>
 
-- Live Demo: *(Add your GitHub Pages link here when deployed)*
+- Live Demo: *https://abdulsadiqsamadani.github.io/Event-identify-web*
 
 ---
 
