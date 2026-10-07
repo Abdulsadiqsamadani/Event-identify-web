@@ -142,6 +142,9 @@ dist
 # End of https://www.toptal.com/developers/gitignore/api/node
 
 node_moduleshint-report/
+<<<<<<< HEAD
 .vscode
+=======
+>>>>>>> 4987b080439bde0fb9d6f9db5a49d2e59c4014e9
 hint-report
 config.bat

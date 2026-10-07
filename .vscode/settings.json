@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 {
   "files.autoSave": "off",
   "workbench.colorTheme": "Cobalt Blue"
 }
+=======
+{
+  "files.autoSave": "afterDelay",
+  "workbench.colorTheme": "Cobalt Blue",
+  "task.allowAutomaticTasks": true,
+  "debug.openDebug": "neverOpen",
+  "terminal.integrated.inheritEnv": false,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
+}
+>>>>>>> 4987b080439bde0fb9d6f9db5a49d2e59c4014e9
